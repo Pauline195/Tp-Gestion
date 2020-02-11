@@ -13,16 +13,16 @@ public class Compte {
 
 	// Attributs compte bancaire
 	
-	private int id;
-	private int numCompte;
-	private int code;
-	private double solde;
-	private int decouvert;
-	private LocalDate dateDeCreation;
+	public int id;
+	public int numCompte;
+	public int code;
+	public double solde;
+	public int decouvert;
+	public LocalDate dateDeCreation;
 	public double decouvertMax;
 	public double debitMax;
-	private double debitAutorise;
-	private double retraitSolde;
+	public double debitAutorise;
+	public double retraitSolde;
 	
 	
 	
@@ -35,16 +35,7 @@ public class Compte {
 	}
 	
 	
-	// Fonction vérification découvert
-	public double montantDecouvert() {
-		if (solde<0) {
-			return -solde;
-		}
-		else
-		{
-			return 0;
-		}
-	}
+
 	
 	// Fonction ajouter de l'argent au compte
 	public void ajoutArgent (double montant)
